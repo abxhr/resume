@@ -1,0 +1,349 @@
+%-------------------------
+% Resume in Latex
+% Author : Abshar Mohammed Aslam
+% License : MIT
+%------------------------
+
+%--- Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+%\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Set the margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{\vspace{-2pt}}
+}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProject}[2]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #2}} \vspace{-0.5mm}\\ 
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeLeadership}[3]{
+  \item
+      \textbf{#1}\\#2 \\
+      \textit{\small#3}\\
+
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Abshar Mohammed Aslam}
+\newcommand{\course}{B.E. -Computer Science and Engineering}
+\newcommand{\phone}{50 486 5197}
+\newcommand{\emaila}{absharaslam2001@gmail.com}
+\newcommand{\github}{abxhr}
+\newcommand{\website}{https://example.com}
+\newcommand{\linkedin}{absharaslam}
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-4mm}
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} github.com/\github} |  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin.com/in/\linkedin} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +971 \phone }
+\end{center}
+\vspace{-3mm}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Dubai, UAE}
+      {Bachelor's of Engineering in Computer Science;  CGPA: 8.98}{Sep. 2019 -- Aug. 2023}
+    \resumeSubheading
+      {Gulf Asian English School}{Sharjah, UAE}
+      {Higher Secondary Education;  Grade: 92\%}{Apr. 2007 -- Mar. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------Work Experience-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ESRI}{Sharjah, UAE}
+      {Incoming Software Engineer Intern}{Aug. 2022 - Present}
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Emirates}{Dubai, UAE}
+      {Revenue Optimization Intern}{Jun. 2021 - Aug. 2021}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed a novel machine learning clustering model to analyze clusters of Emirates SkyCargo Profiles.}
+        \resumeItem{}
+          {Built a web-application from scratch to facilitate the Revenue Optimization Team at Emirates SkyCargo, using Plotly Dash Framework, for easier access to cluster profiles.}
+        \resumeItem{}
+          {Integrated the Clustering Model to SkyCargo’s Microsoft Azure workflow, to allow real-time data analysis, and for continuous future usage.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Open-Source}{}
+      {Contributor}{Nov. 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Contributed to 10+ organizations on GitHub, including ESRI, Microsoft, and AsyncAPI.}
+        \resumeItem{}
+          {Handled Issues, Pull Requests, and Code Reviews for multiple projects.}
+        \resumeItem{}
+          {Maintained a project (Open-DSA) during Hacktoberfest.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Research Experience-----------------
+%\section{Research Experience}
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+	\resumeProject{\textbf{Arabic Natural Language Processing and Sentiment Analysis}}
+	{\raisebox{0.75pt}{Mar. 2022}}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed an NLP Model to recognize the Arabic Language, including all its dialects from the Middle East Region.}
+        \resumeItem{}
+          {Scrapped Tweets of various Arabic Dialects, to analyze sentiments regardless of uniquesentence structuring for each dialect.}
+      \resumeItemListEnd
+ 
+    \vspace{-15pt}
+    
+    \resumeProject{\textbf{Instance and Semantic Segmentation using Mask-RCNN and ArcGIS}}
+	{\raisebox{0.75pt}{Nov. 2021}}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed a model to find instance and semantic segments of roads, buildings, and swimming pools, from the data from the ArcGIS Platform (ArcGIS Python API).}
+        \resumeItem{}
+          {Created a front-end using Dash framework, to easily navigate through the map and find segments in real-time.}
+        \resumeItem{}
+          {Deployed the front-end using GitHub Actions CI/CD for a better workflow.}
+      \resumeItemListEnd
+      
+    \vspace{-15pt}
+    
+    \resumeProject{\textbf{Game AI for Super Mario Bros}}
+	{\raisebox{0.75pt}{Nov. 2021}}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed a Game Playing AI using Deep Reinforcement Learning, to navigate through the map of the game “Super Mario Bros” and score the maximum possible.}
+        \resumeItem{}
+          {Included various Stochastic Functions to ensure smooth functioning of the Game AI.}
+      \resumeItemListEnd
+      
+    \vspace{-15pt}
+    
+    \resumeProject{\textbf{\href{https://github.com/abxhr/Open-DSA}Open DSA}}
+	{\raisebox{0.75pt}{Feb. 2021}}
+      \resumeItemListStart
+        \resumeItem{}
+          {An open-source library containing the implementation of many essential Data Structures and Algorithms.}
+        \resumeItem{}
+          {Data structures include from basic Stacks and Queues to advanced Trees and Graphs.}
+        \resumeItem{}
+          {Algorithms such as various Sorting and Searching techniques and more.}
+        \resumeItem{}
+          {Each topic detailed from their time complexities to their applications.}
+      \resumeItemListEnd
+	
+
+\resumeSubHeadingListEnd
+
+\vspace{-17pt}
+
+
+%-----------Technical Skills-----------------
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\hspace{10pt}Languages \ & Python, C++, C, JavaScript, Java\#  \\
+\hspace{10pt}Web Technologies & HTML, CSS, Django, Flutter, Figma\\
+\hspace{10pt}ML/AI & Tensorfow, Scikit-learn, Natural Language Tool Kit, OpenCV \\
+\hspace{10pt}Data Analytics & MPandas, Numpy, Matplotlib, Plotly, MySQL, Beautiful Soup\\
+\hspace{10pt}Miscellaneous & Git, Linux, Bash, MIPS, Assembly, Latex\\
+\end{tabular}
+}
+
+\vspace{-2.5mm}
+
+%-----------Relevant Coursework-----------------
+\section{Relevant Coursework}
+
+\small{
+
+{$\bullet$ Data Structures $\bullet$ Design \& Analysis of Algorithms $\bullet$ Operating Systems $\bullet$ Compiler Construction $\bullet$ Database Systems $\bullet$ Theory of Computation $\bullet$ Computer Networks $\bullet$ Artificial Intelligence $\bullet$ Deep Learning $\bullet$ Data Mining $\bullet$ Object Oriented Programming $\bullet$ Discrete Structures $\bullet$ Logic in Computer Science $\bullet$ Computer Architecture $\bullet$ Principles of Programming Languages $\bullet$ Optimization}\\
+
+
+}
+
+\vspace{-2.5mm}
+
+%-----------Achievements-----------------
+\section{Achievements}
+
+\vspace{0.2mm}
+
+\small{
+
+{$\bullet$ Semi-finalists for \textit{GCC’s Eureka Startup Competition 2021}.}\\
+{$\bullet$ Conducted an 8-week Coding Bootcamp (with support from \textit{GitHub}).}\\
+{$\bullet$ Conducted a workshop on Open-Source Contributions, in collaboration with \textit{IBM}, \textit{AWS}, \textit{Microsoft Reactor}, and \textit{AstroLabs Dubai}.}\\
+{$\bullet$ Conducted a 6-week Machine Learning Bootcamp, with 500 AED+ sponsorship from \textit{GitHub}.}\\
+{$\bullet$ Selected for \textit{GitHub Campus Experts Program} by \textit{GitHub} among thousands of applicants, to be the first Campus Expert in the \textit{GCC}.}\\
+{$\bullet$ Among top 50 Coders in \textit{Skyline Coding Challenge}.}\\
+{$\bullet$ Best Outgoing Student Award - \textit{Gulf Asian English School}}\\
+
+}
+
+\vspace{-2.5mm}
+
+
+%-----------Leadership-----------------
+\section{Leadership}
+
+\vspace{-15pt}
+\begin{multicols}{2}
+	\begin{itemize}
+		\resumeLeadership{President}{Aug. 2022 - Present}{Alumni Relations Division, BPDC}
+		\resumeLeadership{Secretary}{Jun. 2021 – Present}{ACM BITS Pilani Dubai Campus}
+		\resumeLeadership{Day Scholar Rep.}{Dec. 2020 - Present}{BITS Pilani Dubai Campus}
+		\resumeLeadership{General Secretary}{Aug. 2021 - Aug. 2022}{Alumni Relations Division, BPDC}
+		\resumeLeadership{Head Boy}{2018 - 2019}{Gulf Asian English School}
+		\resumeLeadership{Asst. Head Boy}{2017 - 2018}{Gulf Asian English School}
+	\end{itemize}
+\end{multicols}
+
+%-----------Community----------------
+\section{Community}
+
+\vspace{-15pt}
+\begin{multicols}{2}
+	\begin{itemize}
+		\resumeLeadership{GitHub Campus Expert}{Jun. 2021 – Present}{GitHub}
+		\resumeLeadership{Microsoft Learn Student Ambassador}{Oct. 2021 – Present}{Microsoft}
+		\resumeLeadership{Student Champion}{Nov. 2020 – Present}{Expo 2020}
+		\resumeLeadership{AngelHack Student Ambassador}{Jun. 2021 – Present}{AngelHack}
+	\end{itemize}
+\end{multicols}
+
+%-----------Miscellaneous-----------------
+\section{Miscellaneous}
+
+\small{
+	\textbf{Languages: }{English, Malayalam, Hindi, Arabic, Urdu}\\
+	\textbf{Blog: }{\href{https://abxhr-learning.vercel.app/}abxhr-learning.vercel.app/\\
+	
+}
+
+\end{document}
