@@ -93,7 +93,7 @@
 \newcommand{\resumeProject}[2]{
 \vspace{0.5mm}\item[]
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #2}} \vspace{-0.5mm}\\ 
+    \hspace{-3mm}{#1}: & \hfill{\footnotesize{ #2}} \vspace{-0.5mm}\\ 
     \end{tabular*}
 }
 
@@ -160,6 +160,18 @@
     \resumeSubheading
       {ESRI}{Sharjah, UAE}
       {Incoming Software Engineer Intern}{Aug. 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Automated development workflows of ArcGIS Image Dedicated (AID) using GitHub Actions.}
+        \resumeItem{}
+          {Integrated inspection standards to AWS EKS across various regions using Prometheus and Grafana.}
+        \resumeItem{}
+          {Developed the testing workflow for all the Imagery Services (REST APIs) within ArcGIS Image Dedicated.}
+        \resumeItem{}
+          {Optimized the Build processes within AWS CodeBuild using multi-threading.}
+        \resumeItem{}
+          {Fixed multiple security issues within ArcGIS Image Dedicated to improve code quality.}
+      \resumeItemListEnd
       
 % --------Multiple Positions Heading------------
 %    \resumeSubSubheading
@@ -171,29 +183,19 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
+    \vspace{2mm}
     \resumeSubheading
       {Emirates}{Dubai, UAE}
       {Revenue Optimization Intern}{Jun. 2021 - Aug. 2021}
       \resumeItemListStart
         \resumeItem{}
-          {Developed a novel machine learning clustering model to analyze clusters of Emirates SkyCargo Profiles.}
+          {Developed a novel machine learning Clustering Model to analyze clusters of Emirates SkyCargo profiles.}
         \resumeItem{}
-          {Built a web-application from scratch to facilitate the Revenue Optimization Team at Emirates SkyCargo, using Plotly Dash Framework, for easier access to cluster profiles.}
+          {Built a web tool to facilitate the team to view the cluster profiles using Plotly.}
         \resumeItem{}
-          {Integrated the Clustering Model to SkyCargo’s Microsoft Azure workflow, to allow real-time data analysis, and for continuous future usage.}
+          {Integrated the Clustering Model with Azure to allow real-time data analysis of Cargo at Emirates.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Open-Source}{}
-      {Contributor}{Nov. 2020 - Present}
-      \resumeItemListStart
-        \resumeItem{}
-          {Contributed to 10+ organizations on GitHub, including ESRI, Microsoft, and AsyncAPI.}
-        \resumeItem{}
-          {Handled Issues, Pull Requests, and Code Reviews for multiple projects.}
-        \resumeItem{}
-          {Maintained a project (Open-DSA) during Hacktoberfest.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -209,17 +211,21 @@
 
 	\resumeProject{\textbf{Arabic Natural Language Processing and Sentiment Analysis}}
 	{\raisebox{0.75pt}{Mar. 2022}}
+    \vspace{-5.5mm}
       \resumeItemListStart
         \resumeItem{}
           {Developed an NLP Model to recognize the Arabic Language, including all its dialects from the Middle East Region.}
         \resumeItem{}
-          {Scrapped Tweets of various Arabic Dialects, to analyze sentiments regardless of uniquesentence structuring for each dialect.}
+          {Scrapped Tweets of various Arabic Dialects to create a corpus to train the NLP Model.}
+        \resumeItem{}
+          {Designed a tool using the created NLP Model to analyze the sentiment of any prompt in Arabic.}
       \resumeItemListEnd
  
     \vspace{-15pt}
     
     \resumeProject{\textbf{Instance and Semantic Segmentation using Mask-RCNN and ArcGIS}}
 	{\raisebox{0.75pt}{Nov. 2021}}
+    \vspace{-5.5mm}
       \resumeItemListStart
         \resumeItem{}
           {Developed a model to find instance and semantic segments of roads, buildings, and swimming pools, from the data from the ArcGIS Platform (ArcGIS Python API).}
@@ -233,6 +239,7 @@
     
     \resumeProject{\textbf{Game AI for Super Mario Bros}}
 	{\raisebox{0.75pt}{Nov. 2021}}
+    \vspace{-5.5mm}
       \resumeItemListStart
         \resumeItem{}
           {Developed a Game Playing AI using Deep Reinforcement Learning, to navigate through the map of the game “Super Mario Bros” and score the maximum possible.}
@@ -244,6 +251,7 @@
     
     \resumeProject{\textbf{\href{https://github.com/abxhr/Open-DSA}Open DSA}}
 	{\raisebox{0.75pt}{Feb. 2021}}
+    \vspace{-5.5mm}
       \resumeItemListStart
         \resumeItem{}
           {An open-source library containing the implementation of many essential Data Structures and Algorithms.}
@@ -267,11 +275,22 @@
 
 \small{
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-\hspace{10pt}Languages \ & Python, C++, C, JavaScript, Java\#  \\
-\hspace{10pt}Web Technologies & HTML, CSS, Django, Flutter, Figma\\
-\hspace{10pt}ML/AI & Tensorfow, Scikit-learn, Natural Language Tool Kit, OpenCV \\
-\hspace{10pt}Data Analytics & MPandas, Numpy, Matplotlib, Plotly, MySQL, Beautiful Soup\\
-\hspace{10pt}Miscellaneous & Git, Linux, Bash, MIPS, Assembly, Latex\\
+\hspace{10pt}Languages \ & Python, \hspace{2pt}C++, \hspace{2pt}C, \hspace{2pt}JavaScript, \hspace{2pt}Java\\
+\vspace{2pt}
+\hspace{10pt}DevOps & Docker, \hspace{2pt}Kubernetes, \hspace{2pt}Terraform, \hspace{2pt}Packer, \hspace{2pt}GitHub Actions\\
+\vspace{2pt}
+\hspace{10pt}AWS & S3, \hspace{2pt}EC2, \hspace{2pt}EKS, \hspace{2pt}CodeBuild, \hspace{2pt}DynamoDB, \hspace{2pt}SQS, \hspace{2pt}SES\\
+\vspace{2pt}
+\hspace{10pt}Databases & MySQL, \hspace{2pt}PostgreSQL, \hspace{2pt}MongoDB\\
+\vspace{2pt}
+\hspace{10pt}ML/AI & Tensorfow, \hspace{2pt}Scikit-learn, \hspace{2pt}Natural Language Tool Kit, \hspace{2pt}OpenCV \\
+\vspace{2pt}
+\hspace{10pt}Data Analytics & Pandas, \hspace{2pt}Numpy, \hspace{2pt}Matplotlib, \hspace{2pt}Plotly, \hspace{2pt}MySQL, \hspace{2pt}Beautiful Soup\\
+\vspace{2pt}
+\hspace{10pt}Web Technologies & HTML, \hspace{2pt}CSS, \hspace{2pt}Django, \hspace{2pt}Flutter\\
+\vspace{2pt}
+\hspace{10pt}Miscellaneous & Git, \hspace{2pt}Selenium, \hspace{2pt}Linux, \hspace{2pt}Bash, \hspace{2pt}PowerShell\\
+\vspace{2pt}
 \end{tabular}
 }
 
@@ -280,29 +299,67 @@
 %-----------Relevant Coursework-----------------
 \section{Relevant Coursework}
 
+\vspace{1mm}
+
 \small{
-
-{$\bullet$ Data Structures $\bullet$ Design \& Analysis of Algorithms $\bullet$ Operating Systems $\bullet$ Compiler Construction $\bullet$ Database Systems $\bullet$ Theory of Computation $\bullet$ Computer Networks $\bullet$ Artificial Intelligence $\bullet$ Deep Learning $\bullet$ Data Mining $\bullet$ Object Oriented Programming $\bullet$ Discrete Structures $\bullet$ Logic in Computer Science $\bullet$ Computer Architecture $\bullet$ Principles of Programming Languages $\bullet$ Optimization}\\
-
-
+  {
+  $\bullet$ Data Structures
+  \hspace{2mm}
+  $\bullet$ Design \& Analysis of Algorithms
+  \hspace{2mm}
+  $\bullet$ Operating Systems
+  \hspace{2mm}
+  $\bullet$ Compiler Construction 
+  \hspace{2mm} \\
+  \vspace{1mm}
+  $\bullet$ Database Systems 
+  \hspace{2mm}
+  $\bullet$ Theory of Computation 
+  \hspace{2mm}
+  $\bullet$ Computer Networks 
+  \hspace{2mm}
+  $\bullet$ Artificial Intelligence 
+  \hspace{2mm}
+  $\bullet$ Deep Learning \\
+  \vspace{1mm}
+  $\bullet$ Data Mining 
+  \hspace{2mm}
+  $\bullet$ Object Oriented Programming
+  \hspace{2mm}
+  $\bullet$ Discrete Structures 
+  \hspace{2mm}
+  $\bullet$ Logic in Computer Science \\
+  \vspace{1mm}
+  $\bullet$ Computer Architecture 
+  \hspace{2mm}
+  $\bullet$ Principles of Programming Languages 
+  \hspace{2mm}
+  $\bullet$ Optimization}\\
 }
 
-\vspace{-2.5mm}
+\vspace{-1mm}
 
 %-----------Achievements-----------------
 \section{Achievements}
 
-\vspace{0.2mm}
+\vspace{1mm}
 
 \small{
 
-{$\bullet$ Semi-finalists for \textit{GCC’s Eureka Startup Competition 2021}.}\\
+{$\bullet$ Finalists for \textit{GCC’s Eureka Startup Competition 2021}.}\\
+\vspace{1mm}
 {$\bullet$ Conducted an 8-week Coding Bootcamp (with support from \textit{GitHub}).}\\
-{$\bullet$ Conducted a workshop on Open-Source Contributions, in collaboration with \textit{IBM}, \textit{AWS}, \textit{Microsoft Reactor}, and \textit{AstroLabs Dubai}.}\\
+\vspace{1mm}
+{$\bullet$ Conducted a workshop on "Open-Source", in collaboration with \textit{IBM}, \textit{AWS}, \textit{Microsoft Reactor}, and \textit{AstroLabs Dubai}.}\\
+\vspace{1mm}
 {$\bullet$ Conducted a 6-week Machine Learning Bootcamp, with 500 AED+ sponsorship from \textit{GitHub}.}\\
-{$\bullet$ Selected for \textit{GitHub Campus Experts Program} by \textit{GitHub} among thousands of applicants, to be the first Campus Expert in the \textit{GCC}.}\\
+\vspace{1mm}
+{$\bullet$ First GitHub Campus Expert from the GCC Region.}\\
+\vspace{1mm}
 {$\bullet$ Among top 50 Coders in \textit{Skyline Coding Challenge}.}\\
+\vspace{1mm}
 {$\bullet$ Best Outgoing Student Award - \textit{Gulf Asian English School}}\\
+\vspace{1mm}
 
 }
 
@@ -312,7 +369,8 @@
 %-----------Leadership-----------------
 \section{Leadership}
 
-\vspace{-15pt}
+\vspace{-10pt}
+
 \begin{multicols}{2}
 	\begin{itemize}
 		\resumeLeadership{President}{Aug. 2022 - Present}{Alumni Relations Division, BPDC}
@@ -327,7 +385,7 @@
 %-----------Community----------------
 \section{Community}
 
-\vspace{-15pt}
+\vspace{-10pt}
 \begin{multicols}{2}
 	\begin{itemize}
 		\resumeLeadership{GitHub Campus Expert}{Jun. 2021 – Present}{GitHub}
@@ -340,10 +398,14 @@
 %-----------Miscellaneous-----------------
 \section{Miscellaneous}
 
+\vspace{1mm}
+
 \small{
 	\textbf{Languages: }{English, Malayalam, Hindi, Arabic, Urdu}\\
-	\textbf{Blog: }{\href{https://abxhr-learning.vercel.app/}abxhr-learning.vercel.app/\\
-	
+  \vspace{1mm}
+	\textbf{Blog: }{\href{https://abxhr-learning.vercel.app/}https://abxhr-learning.vercel.app/\\
+  \vspace{1mm}
+	\textbf{LinkedIn: }{\href{https://linkedin.com/in/absharaslam}https://linkedin.com/in/absharaslam\\
 }
 
 \end{document}
